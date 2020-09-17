@@ -14,7 +14,7 @@ The LSS pipeline requires the following libraries:
 - matplotlib
 - pyemma
 
-A full list of the packages and their versions that should be installed into the environmnent to run the codes in this repository can be found [here](https://ferglab.slack.com/files/UB5REGR7Z/F017TKT1XGV/version.txt?origin_team=TB421Q20Y&origin_channel=D016G6HUXBL). 
+A full list of the packages and their versions that should be installed into the environmnent to run the codes in this repository can be found [here](https://ferglab.slack.com/files/UB5REGR7Z/F017TKT1XGV/version.txt?origin_team=TB421Q20Y&origin_channel=D016G6HUXBL) or in the repository. 
 
 ## Installation
 If running Anaconda, all of the above packages should be installed into a virtual environment. Once the environment is created, these can usually be installed by running either `conda install 'name of library'` or `conda install -c conda-forge 'name of library'`. One could also directly download my virtual environment 'PythonGPU' which you can download [here]() and put it into the correct directory. I also created a virtual environment for the LSS on Midway, 'Antony'.
