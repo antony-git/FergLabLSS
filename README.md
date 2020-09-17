@@ -27,7 +27,7 @@ $ pip install ./FergLabLSS
 After activating the virtual environment, open Jupyter and the notebooks should be able to run.
 
 ## Training the LSS pipeline
-For somebody not familiar with the LSS's components, the following is a basic high level overview: The MD trajectory is processed by an SRV (further explanation [here](https://github.com/hsidky/srv) and learns an encoding of molecular configurations into a latent space while discovering a certain number of slow modes. This latent trajectory is propagated through time to transition probabilities by a mixture density network (MDN) denoted 'propagator' in the codes. The third network of the LSS, a conditional Wasserstein GAN (cWGAN) decodes the latent space coordinates back into a molecular configuration. 
+For somebody not familiar with the LSS's components, the following is a basic high level overview: The MD trajectory is processed by an SRV (more on SRVs [here](https://github.com/hsidky/srv)) and learns an encoding of molecular configurations into a latent space while discovering a certain number of slow modes. This latent trajectory is then propagated through time to transition probabilities by a mixture density network (MDN) denoted 'propagator' in the codes. The third network of the LSS, a conditional Wasserstein GAN (cWGAN), decodes the latent space coordinates back into a molecular configuration. 
 
 This notebook contains codes which can run and train all of these components on the MD trajectory of chignolin, included in the chignolin folder. Thus to train the LSS one must:
 1. Import the MD coordinates and load in a certain number of frames in main analysis notebook (for chignolin it is in the chignolin folder and called chignolin_analysis.ipynb) (more is better but will be more computationally intensive)
@@ -41,5 +41,5 @@ Note:
 - the LSS can be trained locally, but it would be very computationally intensive even at lower numbers of frames and epochs. I have included a python script I used to train the propagator and the molgen on Midway
 
 ## Verification and Analysis
-The notebooks include the codes needed to verify various steps of the LSS. For example, the SRV's timescales can be verified by running kTICA and the MSM. The propagator get be verified with 'synth_trajs'. Once satisfied with this accuracy, one can move on to analyzing the accuracy of the resultant kinetic and thermodynamic predictions.
-Sample outputs can be found on 'trp_cage_analysis.ipynb', or by running 'chignolin_analysis.ipynb'.  
+The notebooks include the codes needed to verify various steps of the LSS. For example, the SRV's timescales can be verified by running kTICA and the MSM, and the propagator can be verified with 'synth_trajs'. Once satisfied with this accuracy, one can move on to analyzing the accuracy of the resultant kinetic and thermodynamic predictions.
+Sample outputs can be found on 'trp_cage_analysis.ipynb', or by running 'chignolin_analysis.ipynb'.
