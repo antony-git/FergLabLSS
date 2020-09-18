@@ -17,14 +17,14 @@ The LSS pipeline requires the following libraries:
 A full list of the packages and their versions that should be installed into the environmnent to run the codes in this repository can be found [here](https://ferglab.slack.com/files/UB5REGR7Z/F017TKT1XGV/version.txt?origin_team=TB421Q20Y&origin_channel=D016G6HUXBL) or in the repository. 
 
 ## Installation
-If running Anaconda, all of the above packages should be installed into a virtual environment. Once the environment is created, these can usually be installed by running either `conda install 'name of library'` or `conda install -c conda-forge 'name of library'`. One could also directly download my virtual environment 'PythonGPU' which you can download [here]() and put it into the correct directory. I also created a virtual environment for the LSS on Midway, 'Antony'.
+If running Anaconda, all of the above packages should be installed into a virtual environment. Once the environment is created, these can usually be installed by running either `conda install 'name of library'` or `conda install -c conda-forge 'name of library'`. One could also directly download my virtual environment 'PythonGPU' which you can download [here](https://drive.google.com/drive/folders/1WEievrDRzutvvo0S3rr2GPmODaBU3L9V?usp=sharing) and put it into the correct directory. I also created a virtual environment for the LSS on Midway, 'Antony'.
 
 Next, this repository should be cloned and installed, either manually or by running the following.
 ```bash
 $ git clone https://github.com/antony-git/FergLabLSS
 $ pip install ./FergLabLSS
 ```
-Due to Github's file size limitations, I was note able to upload certain files, such as the trajectories, directly to this repository. You can download the chignolin trajectories [here](https://drive.google.com/drive/u/0/folders/1TqdaAaqCPE__PHXpksq2RORkxcX6cmZm). All other files I was unable to upload directly to Github can be found [here](https://drive.google.com/drive/folders/1WEievrDRzutvvo0S3rr2GPmODaBU3L9V?usp=sharing). These include the chignolin and TRP cage folders, which are organized so as to make it easy to upload their trajectories and run the pipeline.
+Due to Github's file size limitations, I was note able to upload certain files, such as the trajectories, directly to this repository. You can download the chignolin trajectories [here](https://drive.google.com/drive/u/0/folders/1TqdaAaqCPE__PHXpksq2RORkxcX6cmZm) inside the chignolin folder. All other files I was unable to upload directly to Github can be found [here](https://drive.google.com/drive/folders/1WEievrDRzutvvo0S3rr2GPmODaBU3L9V?usp=sharing). This link includes the chignolin and TRP cage folders, and the class code for each component of the LSS. 
 
 I suggest putting all the files in this directory and the folders in the drive link above into one folder. 
 
