@@ -47,3 +47,5 @@ Note:
 ## Verification and Analysis
 The notebooks include the codes needed to verify various steps of the LSS. For example, the SRV's timescales can be verified by running kTICA and the MSM, and the propagator can be verified with 'synth_trajs'. Once satisfied with this accuracy, one can move on to analyzing the accuracy of the resultant kinetic and thermodynamic predictions.
 Sample outputs can be found on 'trp_cage_analysis.ipynb', or by running 'chignolin_analysis.ipynb'.
+
+If anything is unclear, please contact me at antonyawad@uchicago.edu with any questions.
